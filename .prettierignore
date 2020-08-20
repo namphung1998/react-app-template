@@ -1,3 +1,5 @@
 coverage
 build
-node_module
+node_modules
+package-lock.json
+yarn.lock
