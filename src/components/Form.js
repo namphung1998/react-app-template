@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function Form() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const handleChange = (event) => {
     setValue(event.target.value);

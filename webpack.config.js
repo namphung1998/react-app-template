@@ -1,9 +1,9 @@
-const HTMLWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   output: {
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -11,14 +11,14 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
           },
         ],
       },
@@ -31,8 +31,8 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: path.join(__dirname, "public", "index.html"),
-      filename: path.join(__dirname, "build", "index.html"),
+      template: path.join(__dirname, 'public', 'index.html'),
+      filename: path.join(__dirname, 'build', 'index.html'),
     }),
   ],
 };
