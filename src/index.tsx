@@ -5,4 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './containers/app';
 
 const wrapper = document.getElementById('app');
-render(<App />, wrapper);
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  wrapper
+);
